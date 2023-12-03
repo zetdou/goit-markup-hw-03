@@ -35,8 +35,6 @@ button {
 ul,
 ol {
     list-style: none;
-    margin: 0;
-    padding-left: 0;
 }
 
 .container {
@@ -46,7 +44,8 @@ ol {
 }
 
 .header {
-     border-bottom: 1px solid var(--CORNFLOWER)   
+     border-bottom: 1px solid var(--CORNFLOWER);
+     padding: 24px 0; 
 }
 
 .flex-header {
@@ -187,21 +186,14 @@ background-color: var(--OCEAN);
     padding: 100px 0;
 }
 
-.footer-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 .footer-logo {
     text-transform: uppercase;
-    text-decoration: none;
-    color: var(--IRIS);
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     font-weight: 800;
-    line-height: 1.17;
     letter-spacing: 0.54px;
-    display: inline-block;
+    color: var(--IRIS);
+    line-height: 1.17;
     margin-bottom: 16px;
 }
 
@@ -210,7 +202,6 @@ background-color: var(--OCEAN);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    display: flex;
     width: 264px;
 }
 
@@ -237,6 +228,8 @@ background-color: var(--OCEAN);
     color: var(--WHITE);
     text-align: center;
     max-width: 496px;
+    display: block;
+    margin: 0 auto;
 }
 
 .title-section {
