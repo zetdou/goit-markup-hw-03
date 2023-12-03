@@ -92,6 +92,7 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE); 
+    padding: 24px 0;
 }
 
 .address-list {
@@ -195,6 +196,7 @@ background-color: var(--OCEAN);
     color: var(--IRIS);
     line-height: 1.17;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-text {
