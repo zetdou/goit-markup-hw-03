@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --IRIS: #4D5AE5;
     --NAVY-BLUE: #2E2F42;
@@ -6,13 +11,20 @@
     --WHITE: #FFFFFF;
     --CLOUD: #F4F4FD;
     --CORNFLOWER: #E7E9FC;
-
-
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--SLATE);
     background-color: var(--WHITE);
+}
+
+
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 
@@ -30,8 +42,24 @@ body {
     text-decoration: none;
 }
 
-.list {
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+ul,
+ol {
     list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 .highlight-logo-header {
@@ -74,6 +102,35 @@ body {
     color: var(--OCEAN);  
 }
 
+header {
+    display: flex;
+    width: 1440px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: o;
+}
+
+nav a { 
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav {
+    display: flex; 
+}
+
+address ul {
+    display: flex;
+}
+
+address {
+    display: flex;
+}
+
 .btn-index {
     background-color: var(--IRIS);
     color: var(--WHITE);
@@ -93,7 +150,6 @@ background-color: var(--OCEAN);
 .btn {
     background-color: var(--CLOUD);
     color: var(--IRIS);
-    cursor: pointer;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -130,7 +186,7 @@ background-color: var(--OCEAN);
 }
 
 
-.list-text {
+.list-item-text {
     font-size: 16px;
     color: var(--SLATE);
     line-height: 1.5;
@@ -168,11 +224,16 @@ background-color: var(--OCEAN);
     background-color: var(--WHITE);
 }
 
-.list-title {
+.list-item-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE);
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
