@@ -50,6 +50,7 @@ ol {
 
 .flex-header {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav {
@@ -102,6 +103,8 @@ ol {
 
 .address-list-item {
     color: var(--NAVY-BLUE);
+    display: flex;
+
 }
 
 .address {
@@ -136,7 +139,7 @@ ol {
     display: block;
     min-width: 169px;
     height: 56px;
-    margin: 0 auto;
+    margin: 48px auto;
 }
 
 .btn-index:hover,
@@ -257,6 +260,8 @@ background-color: var(--OCEAN);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    max-width: 264px;
     flex-basis: calc((100% - 72px) / 4);
 }
 
