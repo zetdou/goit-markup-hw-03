@@ -201,8 +201,8 @@ background-color: var(--OCEAN);
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.54px;
-    display: flex;
-    padding-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
@@ -221,7 +221,7 @@ background-color: var(--OCEAN);
     line-height: 1.5;
     letter-spacing: 0.32px;
     display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .title {
@@ -258,12 +258,12 @@ background-color: var(--OCEAN);
 .list-team {
     background-color: var(--WHITE);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .list-item-title {
@@ -274,11 +274,17 @@ background-color: var(--OCEAN);
     color: var(--NAVY-BLUE);
     margin-bottom: 8px;
     display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.list-team img {
-    padding-bottom: 32px;
+.name-job {
+    display: flex;
+    width: 232px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 0;
 }
 
 .section {
