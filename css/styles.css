@@ -45,7 +45,6 @@ ol {
 
 .header {
      border-bottom: 1px solid var(--CORNFLOWER);
-     padding: 24px 0; 
 }
 
 .flex-header {
@@ -87,13 +86,16 @@ ol {
     color: var(--CLOUD);
 }
 
+.menu li {
+    padding: 24px 0;
+}
+
 .menu-item {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE); 
-    padding: 24px 0;
 }
 
 .address-list {
@@ -101,10 +103,15 @@ ol {
     gap: 40px;
 }
 
+.address-list li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 24px 0;
+}
+
 .address-list-item {
     color: var(--NAVY-BLUE);
-    display: flex;
-
 }
 
 .address {
@@ -138,8 +145,8 @@ ol {
     letter-spacing: 0.64px;
     display: block;
     min-width: 169px;
-    height: 56px;
     margin: 48px auto;
+    padding: 16px 32px;
 }
 
 .btn-index:hover,
@@ -155,6 +162,10 @@ background-color: var(--OCEAN);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
+    padding: 12px 24px;
+    border: 1px solid var(--CORNFLOWER);
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -162,6 +173,15 @@ background-color: var(--OCEAN);
 .btn:focus {
     color: var(--WHITE);
     background-color: var(--OCEAN);
+    border: 1px solid transparent;
+}
+
+.btn-flex {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 72px;
 }
 
 .flex-list {
@@ -216,7 +236,6 @@ background-color: var(--OCEAN);
     color: var(--SLATE);
     line-height: 1.5;
     letter-spacing: 0.32px;
-    display: flex;
 }
 
 .title {
@@ -254,14 +273,12 @@ background-color: var(--OCEAN);
 
 .list-team {
     background-color: var(--WHITE);
-    border-radius: 0px 0px 4px 4px;
-    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 264px;
     flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -282,13 +299,20 @@ background-color: var(--OCEAN);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     padding: 32px 0;
 }
 
-.section {
+.name-job p {
+    text-align: center;
+}
+
+.section-index {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.section-portfolio {
+    padding: 96px 0 120px 0;
 }
 
 .visually-hidden {
@@ -303,3 +327,37 @@ background-color: var(--OCEAN);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+
+  .card-list-item {
+    display: flex;
+    width: 360px;
+    height: 420px;
+    padding-bottom: 32px;
+    gap: 32px;
+    width: calc((100% - 48px) / 3);
+  }
+
+.card-list-item-text {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid var(--CORNFLOWER);
+    border-top: none;
+}
+
+.card-list-item-text h2 {
+    margin-bottom: 8px
+}
+
+
+
