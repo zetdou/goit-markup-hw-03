@@ -96,7 +96,7 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE);
-    padding: 24px; 
+    padding: 24px 0; 
 }
 
 .address-list {
