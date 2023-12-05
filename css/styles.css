@@ -23,7 +23,7 @@ body {
 img {
     display: block;
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 button {
@@ -201,9 +201,27 @@ background-color: var(--OCEAN);
     width: calc((100% - 3*24px) / 4);
 }
 
-.image-width {
-    flex-basis: calc((100% - 48px) / 3);
+.flex-list-image {
+    display: flex;
 }
+
+.flex-list-image li {
+    margin-right: 24px;
+}
+
+.flex-list-image li:last-child {
+    margin-right: 0;
+}
+
+.image-width {
+    display: flex;
+    flex-basis: calc((100% - 48px) / 3);
+    align-items: flex-start;
+}
+
+.image-width img {
+    height: 300px; 
+} 
 
 
 .footer {
@@ -316,6 +334,10 @@ background-color: var(--OCEAN);
     padding-bottom: 120px;
 }
 
+.section-index-second-padding {
+    padding: 0 0 120px 0;
+}
+
 .section-portfolio {
     padding: 96px 0 120px 0;
 }
@@ -355,14 +377,10 @@ background-color: var(--OCEAN);
     padding: 32px 16px;
     justify-content: center;
     align-items: flex-start;
-    align-self: stretch;
     border: 1px solid var(--CORNFLOWER);
     border-top: none;
 }
 
-.card-list-item-text h2 {
-    margin-bottom: 8px
-}
 
 
 
