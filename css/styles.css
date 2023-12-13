@@ -220,6 +220,7 @@ background-color: var(--OCEAN);
 }
 
 .image-width img {
+    align-self: flex-start;
     height: 300px; 
 } 
 
